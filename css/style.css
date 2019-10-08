@@ -12,12 +12,13 @@ html {
 body {
     text-align: center;
     font-family: 'Raleway';
+    width: 100%;
 }
 
 .site-header {
     position: fixed;
     background-color: white;
-    max-width: 100%;
+    width: 100%;
     padding: 10px 10px 0 10px;
 }
 
@@ -50,7 +51,7 @@ body {
     padding: 10px 20px;
 }
 .site-nav a {
-    font-size: 1em;
+    font-size: .9em;
     color: rgb(219, 99, 43);
     text-decoration: none;
 }
@@ -70,7 +71,7 @@ body {
     background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/banner-girl.png), url(../project-01/images/flower-bkgd.jpg);
     background-repeat: repeat, no-repeat, repeat;
     background-position: center, center 150px, center;
-    background-size: cover,180px 460px, cover;
+    background-size: cover,180px 440px, cover;
     height: 500px;
     width: 100%;
 }
@@ -267,6 +268,62 @@ body {
 @media screen and (min-width: 600px) {
 
 
+    .site-header {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        background-color: white;
+        width: 100%;
+        padding: 15px 0;
+        margin: 0 auto;
+    }
+    
+    .header-container {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .logo {
+        flex-basis: 20%;
+        order: 1;
+    }
+    .aloha-logo {
+        width: 100px;
+    }
+    
+    .site-nav {
+        flex-basis: 60%;
+        order: 2;    
+    }
+    
+    .site-nav ul {
+        text-align: center;
+        border: none;
+    }
+    .site-nav li {
+        margin-top: 5px;
+        align-self: center;
+        padding: 10px;
+    }
+    .site-nav a {
+        font-size: .9rem;
+        color: rgb(219, 99, 43);
+        text-decoration: none;
+    }
+    .site-nav a:hover {
+        color: rgba(63, 6, 6, 0.829);
+        text-decoration: none;
+    }
+    
+    .shopping-cart {
+        flex-basis: 20%;
+        order: 3;
+    }
+    .shopping-cart-img {
+        width: 45px;
+    }
+    
 
 }
 
@@ -281,28 +338,28 @@ body {
 .site-header {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: center;
     background-color: white;
     width: 100%;
     padding: 15px 0;
+    margin: 0 auto;
 }
 
 .header-container {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
-.aloha-logo {
-    display: flex;
+.logo {
+    flex-basis: 20%;
     order: 1;
+}
+.aloha-logo {
     width: 150px;
 }
 
 .site-nav {
-    display: flex;
     flex-basis: 60%;
     order: 2;    
 }
@@ -311,25 +368,26 @@ body {
     text-align: center;
     border: none;
 }
-.site-nav-main li {
+.site-nav li {
     margin-top: 5px;
     align-self: center;
     padding: 20px;
 }
-.site-nav-main a {
-    font-size: 17px;
+.site-nav a {
+    font-size: 1.1rem;
     color: rgb(219, 99, 43);
     text-decoration: none;
 }
-.site-nav-main a:hover {
+.site-nav a:hover {
     color: rgba(63, 6, 6, 0.829);
     text-decoration: none;
 }
 
-.shopping-cart-img {
-    display: flex;
+.shopping-cart {
     flex-basis: 20%;
     order: 3;
+}
+.shopping-cart-img {
     width: 60px;
 }
 
@@ -338,14 +396,14 @@ body {
     padding: 150px 0px;
     background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/banner-girl.png), url(../project-01/images/flower-bkgd.jpg);
     background-repeat: repeat, no-repeat, repeat;
-    background-position: center, center 80px, center;
-    background-size: cover,240px 600px, cover;
+    background-position: center, center 120px, center;
+    background-size: cover,210px 500px, cover;
     height: 550px;
     width: 100%;
 }
 
 .newcollection {
-    margin-top: 100px;
+    margin-top: 120px;
     font-size: 20px;
     color: white;
     text-shadow: 1px 1px black;
