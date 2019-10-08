@@ -43,7 +43,7 @@ body {
     align-items: center;
     text-align: center;
     list-style: none;
-    border-top: 1px thin rgb(201, 201, 201);
+    border-top: 1px solid rgb(201, 201, 201);
 }
 
 .site-nav li {
@@ -289,22 +289,28 @@ body {
 
 .header-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
 }
 
 .aloha-logo {
+    display: flex;
     order: 1;
     width: 150px;
 }
 
-.site-nav-main {
+.site-nav {
+    display: flex;
+    flex-basis: 60%;
     order: 2;    
-    list-style: none;
 }
 
+.site-nav ul {
+    text-align: center;
+    border: none;
+}
 .site-nav-main li {
     margin-top: 5px;
     align-self: center;
@@ -321,6 +327,8 @@ body {
 }
 
 .shopping-cart-img {
+    display: flex;
+    flex-basis: 20%;
     order: 3;
     width: 60px;
 }
