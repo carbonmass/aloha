@@ -2,6 +2,8 @@
 
 /* Extra resets */
 /* apply a natural box layout model to all elements, but allowing components to change */
+
+
 html {
     box-sizing: border-box;
   }
@@ -16,7 +18,7 @@ body {
 }
 
 .site-header {
-    position: fixed;
+    /* position: fixed; */
     background-color: white;
     width: 100%;
     padding: 10px 10px 0 10px;
