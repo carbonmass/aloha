@@ -1,0 +1,516 @@
+/* ------MOBILE------ */
+
+/* Extra resets */
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    text-align: center;
+    font-family: 'Raleway';
+}
+
+.site-header {
+    position: fixed;
+    background-color: white;
+    max-width: 100%;
+    padding: 10px 10px 0 10px;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.aloha-logo {
+    order: 1;
+    width: 7rem;
+}
+
+.site-nav {
+    order: 3;
+    width: 100%;
+}
+
+.site-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    border-top: 1px thin rgb(201, 201, 201);
+}
+
+.site-nav li {
+    padding: 10px 20px;
+}
+.site-nav a {
+    font-size: 1em;
+    color: rgb(219, 99, 43);
+    text-decoration: none;
+}
+.site-nav a:hover {
+    color: rgba(63, 6, 6, 0.829);
+    text-decoration: none;
+}
+
+.shopping-cart-img {
+    order: 2;
+    width: 2.8rem;
+}
+
+/* banner area */
+.banner {
+    padding: 150px 0px;
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/banner-girl.png), url(../project-01/images/flower-bkgd.jpg);
+    background-repeat: repeat, no-repeat, repeat;
+    background-position: center, center 150px, center;
+    background-size: cover,180px 460px, cover;
+    height: 500px;
+    width: 100%;
+}
+
+.newcollection {
+    margin-top: 120px;
+    font-size: 1rem;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+.summer {
+    padding-top: 10px;
+    font-family: 'Playfair Display';
+    font-size: 2.3rem;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.about {
+    padding: 65px 5px 140px 5px;
+    height: 80px;
+}
+
+.about-header {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-size: 2.4rem;
+    line-height: 6rem;
+}
+
+.style-font {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.about p {
+    line-height: 2rem;
+    font-weight: lighter;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    padding-top: 95px;
+}
+
+.products a {
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover, cover;
+    text-shadow: 2px 2px rgb(117, 112, 112);
+}
+
+.products a:hover {
+    color: rgb(240, 209, 180);
+    text-shadow: 2px 2px rgb(117, 112, 112);
+}
+
+.category-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+    border: 4px solid white;
+}
+
+.mens {
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/mens-category.jpg);
+    flex-basis: 100%;
+    background-position: center;
+    background-size: contain;
+    border-left: none;
+    border-right: none;
+}
+.trends {
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/trends-category.jpg);
+    background-position: center;
+    background-size: contain;
+    border-left: none;
+    flex-basis: 50%;
+}
+.glasses {
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/glasses-category.jpg);
+    background-position: center;
+    background-size: contain;
+    flex-basis: 50%;
+    border-right: none;
+}
+.sale {
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/sale-category.jpg);
+    background-position: center;
+    background-size: contain;
+    flex-basis: 50%;
+    border-left: none;
+}
+.bags {
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/bags-category.jpg);
+    background-position: center;
+    background-size: contain;
+    border-right: none;
+    flex-basis: 50%;
+}
+.womens {
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/womens-category.jpg);
+    flex-basis: 100%;
+    background-position: center;
+    background-size: contain;
+    border-right: none;
+    border-left: none;
+}
+
+.featured {
+    padding-top: 95px;
+}
+.featured img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.updates {
+    background: url(../project-01/images/wave-bkgd.jpg);
+    background-position: 0% 95%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    color: white;
+    text-shadow: .5px .5px grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.updates-header {
+    font-family: 'Playfair Display';
+    font-size: 30px;
+    padding: 1rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(22, 19, 19);
+}
+
+.address {
+    text-align: left;
+    font-size: 18px;
+    margin: 50px 50px;
+    color: white;
+}
+
+.street-address {
+    color: gray;
+}
+
+.address a {
+    text-decoration: underline;
+    color: white; 
+}
+.address a:hover {
+    color: rgb(196, 71, 49);
+}
+
+.social-media {
+    list-style: none;
+    text-align: left;
+}
+
+.social-media li {
+    margin: 20px 70px;
+    padding: 5px;
+} 
+
+.social-media a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    justify-content: right;
+}
+
+.social-media li a:hover {
+    text-decoration: none;
+    color: rgb(255, 181, 181);
+}
+
+
+
+/* ------TABLET------ */
+
+@media screen and (min-width: 600px) {
+
+
+
+}
+
+
+/* ------DESKTOP------ */
+
+@media screen and (min-width: 1240px) {
+
+/* Extra resets */
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+.site-header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.aloha-logo {
+    order: 1;
+    width: 150px;
+}
+
+.site-nav-main {
+    order: 2;    
+    list-style: none;
+}
+
+.site-nav-main li {
+    margin-top: 5px;
+    align-self: center;
+    padding: 20px;
+}
+.site-nav-main a {
+    font-size: 17px;
+    color: rgb(219, 99, 43);
+    text-decoration: none;
+}
+.site-nav-main a:hover {
+    color: rgba(63, 6, 6, 0.829);
+    text-decoration: none;
+}
+
+.shopping-cart-img {
+    order: 3;
+    width: 60px;
+}
+
+/* banner area */
+.banner {
+    padding: 150px 0px;
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/banner-girl.png), url(../project-01/images/flower-bkgd.jpg);
+    background-repeat: repeat, no-repeat, repeat;
+    background-position: center, center 80px, center;
+    background-size: cover,240px 600px, cover;
+    height: 550px;
+    width: 100%;
+}
+
+.newcollection {
+    margin-top: 100px;
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+.summer {
+    font-size: 70px;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.about {
+    padding: 65px 0 150px 0;
+    height: 120px;;
+}
+
+.about-header {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-size: 2.4rem;
+    line-height: 6rem;
+}
+
+.style-font {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.about p {
+    line-height: 2rem;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+    padding-top: 95px;
+}
+
+.products a {
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover, cover;
+    text-shadow: 2px 2px rgb(117, 112, 112);
+}
+
+.products a:hover {
+    color: rgb(240, 209, 180);
+    text-shadow: 2px 2px rgb(117, 112, 112);
+}
+
+.category-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    border: 4px solid white;
+}
+
+.mens {
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/mens-category.jpg);
+    flex-basis: 50%;
+    border-left: none;
+}
+.trends {
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/trends-category.jpg);
+    flex-basis: 25%;
+}
+.glasses {
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/glasses-category.jpg);
+    flex-basis: 25%;
+    border-right: none;
+}
+.sale {
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/sale-category.jpg);
+    flex-basis: 25%;
+    border-left: none;
+}
+.bags {
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/bags-category.jpg);
+    flex-basis: 25%;
+}
+.womens {
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/womens-category.jpg);
+    flex-basis: 50%;
+    border-right: none;
+}
+
+.featured {
+    padding-top: 95px;
+}
+.featured img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.updates {
+    background: url(../project-01/images/wave-bkgd.jpg);
+    background-position: 0% 95%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    color: white;
+    text-shadow: .5px .5px grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.updates-header {
+    font-family: 'Playfair Display';
+    font-size: 30px;
+    padding: 1rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(22, 19, 19);
+}
+
+.address {
+    text-align: left;
+    font-size: 18px;
+    margin: 50px 50px;
+    color: white;
+}
+
+.street-address {
+    color: gray;
+}
+
+.address a {
+    text-decoration: underline;
+    color: white; 
+}
+.address a:hover {
+    color: rgb(196, 71, 49);
+}
+
+.social-media {
+    list-style: none;
+    text-align: left;
+}
+
+.social-media li {
+    margin: 20px 70px;
+    padding: 5px;
+} 
+
+.social-media a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    justify-content: right;
+}
+
+.social-media li i {
+    text-align: left;
+    margin-right: 10px;
+}
+
+.social-media li a:hover {
+    text-decoration: none;
+    color: rgb(255, 181, 181);
+}
+
+/* Common Layout Classes */
+
+.container-small {
+    width: 740px;
+    margin: 0 auto;
+}
+}
