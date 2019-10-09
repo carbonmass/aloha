@@ -14,13 +14,13 @@ html {
 body {
     text-align: center;
     font-family: 'Raleway';
-    width: 100%;
 }
 
 .site-header {
     /* position: fixed; */
+    /* display: flex; */
     background-color: white;
-    width: 100%;
+    max-width: 100%;
     padding: 10px 10px 0 10px;
 }
 
@@ -50,10 +50,10 @@ body {
 }
 
 .site-nav li {
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 .site-nav a {
-    font-size: .9em;
+    font-size: .8em;
     color: rgb(219, 99, 43);
     text-decoration: none;
 }
@@ -100,7 +100,7 @@ body {
 .about-header {
     font-family: 'Playfair Display';
     font-style: italic;
-    font-size: 2.4rem;
+    font-size: 2rem;
     line-height: 6rem;
 }
 
@@ -199,7 +199,7 @@ body {
 
 .updates {
     background: url(../project-01/images/wave-bkgd.jpg);
-    background-position: 0% 95%;
+    background-position: 0% 100%;
     background-size:cover;
     background-repeat: no-repeat;
     height: 300px;
@@ -208,6 +208,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 8px;
 }
 
 .updates-header {
@@ -216,15 +217,56 @@ body {
     padding: 1rem;
 }
 
+.subscribe-form {
+    position: relative;
+    width: 50%;
+    margin: 30px auto;
+  }
+  
+  .subscribe-form-input {
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    border: 1px solid rgb(148, 140, 140);
+    padding: 4px 10px;
+    font-size: 1rem;
+  }
+  
+  .subscribe-form-input:focus {
+    outline: none;
+    border: 1px solid #800000;
+  }
+  
+  .subscribe-form-submit {
+    background: rgb(196, 85, 85);
+    color: #fff;
+    height: 40px;
+    padding: 2px 10px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    border-radius: 20px;
+    font-size: 1rem;
+  }
+  
+  .subscribe-form-submit:focus {
+    outline: none;
+    background: #800000;
+    color: #fff;
+  }
+  
+
 .footer {
     display: flex;
-    justify-content: space-between;
-    background-color: rgb(22, 19, 19);
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(51, 47, 47);
 }
 
 .address {
-    text-align: left;
+    text-align: center;
     font-size: 18px;
+    font-family: 'Playfair Display';
     margin: 50px 50px;
     color: white;
 }
@@ -241,13 +283,13 @@ body {
     color: rgb(196, 71, 49);
 }
 
-.social-media {
-    list-style: none;
-    text-align: left;
+.social-media ul {
+    display: flex;
+    justify-content: center;
 }
 
 .social-media li {
-    margin: 20px 70px;
+    margin: 10px 10px;
     padding: 5px;
 } 
 
@@ -255,7 +297,7 @@ body {
     text-decoration: none;
     font-size: 1.2rem;
     color: white;
-    justify-content: right;
+    justify-content: center;
 }
 
 .social-media li a:hover {
@@ -263,6 +305,9 @@ body {
     color: rgb(255, 181, 181);
 }
 
+.so-me-names {
+    display: none;
+}
 
 
 /* ------TABLET------ */
@@ -271,6 +316,7 @@ body {
 
 
     .site-header {
+        position: fixed;
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
@@ -326,7 +372,46 @@ body {
         width: 45px;
     }
     
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        height: 120vh;
+        padding-top: 95px;
+    }
 
+    .footer {
+        display: flex;
+        flex-direction: row;
+        flex-direction: wrap;
+        justify-content: space-between;
+        background-color: rgb(51, 47, 47);
+    }
+    .address {
+        text-align: left;
+    }
+    
+    .so-me-names {
+        display: inline;
+        font-size: 1rem;
+    }
+
+    .social-media {
+        margin-right: 40px;
+        margin-top: 20px;
+    }
+    .social-media ul {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .social-media li {
+        margin: 5px;
+    }
+    .social-media li i {
+        margin-right: 10px;
+    }
+    
 }
 
 
@@ -525,8 +610,9 @@ body {
 
 .footer {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    background-color: rgb(22, 19, 19);
+    background-color: rgb(51, 47, 47);
 }
 
 .address {
@@ -548,25 +634,25 @@ body {
     color: rgb(196, 71, 49);
 }
 
+.so-me-names {
+    display: inline;
+    font-size: 1rem;
+}
+
 .social-media {
-    list-style: none;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+.social-media ul {
+    display: flex;
+    flex-direction: column;
     text-align: left;
 }
 
 .social-media li {
-    margin: 20px 70px;
-    padding: 5px;
-} 
-
-.social-media a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: white;
-    justify-content: right;
+    margin: 5px;
 }
-
 .social-media li i {
-    text-align: left;
     margin-right: 10px;
 }
 
