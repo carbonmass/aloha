@@ -109,6 +109,9 @@ body {
     font-weight: bold;
 }
 
+.about {
+    text-align: center;
+}
 .about p {
     line-height: 2rem;
     font-weight: lighter;
@@ -147,35 +150,35 @@ body {
     background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/mens-category.jpg);
     flex-basis: 100%;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     border-left: none;
     border-right: none;
 }
 .trends {
     background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/trends-category.jpg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     border-left: none;
     flex-basis: 50%;
 }
 .glasses {
     background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/glasses-category.jpg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     flex-basis: 50%;
     border-right: none;
 }
 .sale {
     background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/sale-category.jpg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     flex-basis: 50%;
     border-left: none;
 }
 .bags {
     background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/bags-category.jpg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     border-right: none;
     flex-basis: 50%;
 }
@@ -183,7 +186,7 @@ body {
     background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/womens-category.jpg);
     flex-basis: 100%;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     border-right: none;
     border-left: none;
 }
@@ -198,13 +201,15 @@ body {
 }
 
 .updates {
-    background: url(../project-01/images/wave-bkgd.jpg);
-    background-position: 0% 100%;
-    background-size:cover;
-    background-repeat: no-repeat;
+    background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)),url(../project-01/images/wave-bkgd.jpg) no-repeat bottom;;
+    /* max-width: 100%; */
+    text-align: center;
+    /* background-position: bottom; */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
     height: 300px;
     color: white;
-    text-shadow: .5px .5px grey;
+    text-shadow: .5px 2px grey;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,31 +218,47 @@ body {
 
 .updates-header {
     font-family: 'Playfair Display';
-    font-size: 30px;
-    padding: 1rem;
+    font-style: italic;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.updates span {
+    font-style: normal;
+    font-weight: bold;
+}
+.updates ul {
+    max-width: 700px;
+}
+
+.updates-paragraph {
+    font-family: 'Raleway';
+    font-size: 1.2em;
+    font-weight: lighter;
+    line-height: 1.2em;
 }
 
 .subscribe-form {
     position: relative;
-    width: 50%;
+    width: 80%;
     margin: 30px auto;
-  }
+}
   
-  .subscribe-form-input {
+.subscribe-form-input {
     width: 100%;
     height: 45px;
     border-radius: 20px;
     border: 1px solid rgb(148, 140, 140);
     padding: 4px 10px;
     font-size: 1rem;
-  }
+}
   
-  .subscribe-form-input:focus {
+.subscribe-form-input:focus {
     outline: none;
     border: 1px solid #800000;
-  }
+}
   
-  .subscribe-form-submit {
+.subscribe-form-submit {
     background: rgb(196, 85, 85);
     color: #fff;
     height: 40px;
@@ -247,14 +268,13 @@ body {
     right: 2px;
     border-radius: 20px;
     font-size: 1rem;
-  }
+}
   
-  .subscribe-form-submit:focus {
+.subscribe-form-submit:focus {
     outline: none;
     background: #800000;
     color: #fff;
-  }
-  
+}
 
 .footer {
     display: flex;
@@ -491,12 +511,10 @@ body {
 
 .newcollection {
     margin-top: 120px;
-    font-size: 20px;
     color: white;
     text-shadow: 1px 1px black;
 }
 .summer {
-    font-size: 70px;
     color: white;
     text-shadow: 1px 1px black;
 }
@@ -589,24 +607,17 @@ body {
     align-items: center;
 }
 
-.updates {
-    background: url(../project-01/images/wave-bkgd.jpg);
-    background-position: 0% 95%;
-    background-size:cover;
-    background-repeat: no-repeat;
+/* .updates {
     height: 300px;
-    color: white;
-    text-shadow: .5px .5px grey;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
-.updates-header {
-    font-family: 'Playfair Display';
+/* .updates-header {
     font-size: 30px;
     padding: 1rem;
-}
+} */
 
 .footer {
     display: flex;
