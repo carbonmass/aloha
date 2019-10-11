@@ -1,15 +1,19 @@
 /* ------MOBILE------ */
 
-/* Extra resets */
-/* apply a natural box layout model to all elements, but allowing components to change */
 
+/* Extra resets */
+
+
+/* apply a natural box layout model to all elements, but allowing components to change */
 
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -31,6 +35,7 @@ h2 {
 .bold {
     font-weight: bold;
 }
+
 .site-header {
     background-color: white;
     max-width: 100%;
@@ -66,11 +71,13 @@ h2 {
 .site-nav li {
     padding: 10px 10px;
 }
+
 .site-nav a {
     font-size: .8em;
     color: rgb(219, 99, 43);
     text-decoration: none;
 }
+
 .site-nav a:hover {
     color: rgba(63, 6, 6, 0.829);
     text-decoration: none;
@@ -81,13 +88,15 @@ h2 {
     width: 2.8rem;
 }
 
+
 /* banner area */
+
 .banner {
     padding: 150px 0px;
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/banner-girl.png), url(../project-01/images/flower-bkgd.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url(../project-01/images/banner-girl.png), url(../project-01/images/flower-bkgd.jpg);
     background-repeat: repeat, no-repeat, repeat;
     background-position: center, center 150px, center;
-    background-size: cover,180px 440px, cover;
+    background-size: cover, 180px 440px, cover;
     height: 500px;
     width: 100%;
 }
@@ -98,6 +107,7 @@ h2 {
     color: white;
     text-shadow: 1px 1px black;
 }
+
 .summer {
     padding-top: 10px;
     font-family: 'Playfair Display';
@@ -126,6 +136,7 @@ h2 {
 .about {
     text-align: center;
 }
+
 .about p {
     line-height: 2rem;
     font-weight: lighter;
@@ -161,73 +172,86 @@ h2 {
 }
 
 .mens {
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/mens-category.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url(../project-01/images/mens-category.jpg);
     flex-basis: 100%;
-    background-position: center;
-    background-size: cover;
+    background-size: contain, cover;
     border-left: none;
     border-right: none;
 }
+
 .trends {
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/trends-category.jpg);
-    background-position: center;
-    background-size: cover;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url(../project-01/images/trends-category.jpg);
+    background-size: contain, cover;
     border-left: none;
     flex-basis: 50%;
 }
+
 .glasses {
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/glasses-category.jpg);
-    background-position: center;
-    background-size: cover;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url(../project-01/images/glasses-category.jpg);
+    background-size: contain, cover;
     flex-basis: 50%;
     border-right: none;
 }
+
 .sale {
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/sale-category.jpg);
-    background-position: center;
-    background-size: cover;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url(../project-01/images/sale-category.jpg);
+    background-size: contain, cover;
     flex-basis: 50%;
     border-left: none;
 }
+
 .bags {
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/bags-category.jpg);
-    background-position: center;
-    background-size: cover;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url(../project-01/images/bags-category.jpg);
+    background-size: contain, cover;
     border-right: none;
     flex-basis: 50%;
 }
+
 .womens {
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/womens-category.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url(../project-01/images/womens-category.jpg);
     flex-basis: 100%;
-    background-position: center;
-    background-size: cover;
+    background-size: contain, cover;
     border-right: none;
     border-left: none;
 }
 
 .featured {
-    padding-top: 95px;
+    padding-top: 100px;
+    padding-bottom: 80px;
 }
+
 .featured img {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .carousel-cell {
     max-width: 100%;
     text-align: center;
     padding: 3rem 2rem;
-
 }
 
 .main-carousel {
-    height: 48vh;
+    height: 60vh;
     max-width: 100%;
     padding-bottom: 4rem;
 }
 
+h3 {
+    font-family: 'Playfair Display';
+    font-size: 1.5em;
+    color: rgb(223, 31, 31);
+    padding: .5em;
+}
+
+.carousel-cell p {
+    color: rgb(125, 128, 134)
+}
+
 .updates {
-    background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)),url(../project-01/images/wave-bkgd.jpg) no-repeat bottom;;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .15) 0, rgba(0, 0, 0, .15)), url(../project-01/images/wave-bkgd.jpg) no-repeat bottom;
+    ;
     text-align: center;
     height: 300px;
     color: white;
@@ -245,10 +269,12 @@ h2 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 .updates span {
     font-style: normal;
     font-weight: bold;
 }
+
 .updates ul {
     max-width: 700px;
 }
@@ -265,7 +291,7 @@ h2 {
     width: 80%;
     margin: 30px auto;
 }
-  
+
 .subscribe-form-input {
     width: 100%;
     height: 45px;
@@ -274,12 +300,12 @@ h2 {
     padding: 4px 10px;
     font-size: 1rem;
 }
-  
+
 .subscribe-form-input:focus {
     outline: none;
     border: 1px solid #800000;
 }
-  
+
 .subscribe-form-submit {
     background: rgb(196, 85, 85);
     color: #fff;
@@ -291,7 +317,7 @@ h2 {
     border-radius: 20px;
     font-size: 1rem;
 }
-  
+
 .subscribe-form-submit:focus {
     outline: none;
     background: #800000;
@@ -319,8 +345,9 @@ h2 {
 
 .address a {
     text-decoration: underline;
-    color: white; 
+    color: white;
 }
+
 .address a:hover {
     color: rgb(196, 71, 49);
 }
@@ -333,7 +360,7 @@ h2 {
 .social-media li {
     margin: 10px 10px;
     padding: 5px;
-} 
+}
 
 .social-media a {
     text-decoration: none;
@@ -351,11 +378,10 @@ h2 {
     display: none;
 }
 
+
 /* ------TABLET------ */
 
 @media screen and (min-width: 600px) {
-
-
     .site-header {
         position: fixed;
         display: flex;
@@ -366,13 +392,11 @@ h2 {
         padding: 15px 0;
         margin: 0 auto;
     }
-    
     .header-container {
         justify-content: center;
         align-items: center;
         width: 100%;
     }
-    
     .logo {
         flex-basis: 20%;
         order: 1;
@@ -380,12 +404,10 @@ h2 {
     .aloha-logo {
         width: 100px;
     }
-    
     .site-nav {
         flex-basis: 60%;
-        order: 2;    
+        order: 2;
     }
-    
     .site-nav ul {
         text-align: center;
         border: none;
@@ -404,7 +426,6 @@ h2 {
         color: rgba(63, 6, 6, 0.829);
         text-decoration: none;
     }
-    
     .shopping-cart {
         flex-basis: 20%;
         order: 3;
@@ -412,18 +433,15 @@ h2 {
     .shopping-cart-img {
         width: 45px;
     }
-    
     .products {
         display: flex;
         flex-wrap: wrap;
         height: 140vh;
         padding-top: 95px;
     }
-
     .carousel-cell {
         width: 50%;
     }
-
     .footer {
         display: flex;
         flex-direction: row;
@@ -434,12 +452,10 @@ h2 {
     .address {
         text-align: left;
     }
-    
     .so-me-names {
         display: inline;
         font-size: 1rem;
     }
-
     .social-media {
         margin-right: 40px;
         margin-top: 20px;
@@ -449,250 +465,210 @@ h2 {
         flex-direction: column;
         text-align: left;
     }
-
     .social-media li {
         margin: 5px;
     }
     .social-media li i {
         margin-right: 10px;
     }
-    
 }
 
 
 /* ------DESKTOP------ */
 
 @media screen and (min-width: 1240px) {
-
-/* Extra resets */
-/* apply a natural box layout model to all elements, but allowing components to change */
-
-.site-header {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    background-color: white;
-    width: 100%;
-    padding: 15px 0;
-    margin: 0 auto;
-}
-
-.header-container {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.logo {
-    flex-basis: 20%;
-    order: 1;
-}
-.aloha-logo {
-    width: 150px;
-}
-
-.site-nav {
-    flex-basis: 60%;
-    order: 2;    
-}
-
-.site-nav ul {
-    text-align: center;
-    border: none;
-}
-.site-nav li {
-    margin-top: 5px;
-    align-self: center;
-    padding: 20px;
-}
-.site-nav a {
-    font-size: 1.1rem;
-    color: rgb(219, 99, 43);
-    text-decoration: none;
-}
-.site-nav a:hover {
-    color: rgba(63, 6, 6, 0.829);
-    text-decoration: none;
-}
-
-.shopping-cart {
-    flex-basis: 20%;
-    order: 3;
-}
-.shopping-cart-img {
-    width: 60px;
-}
-
-/* banner area */
-.banner {
-    padding: 150px 0px;
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/banner-girl.png), url(../project-01/images/flower-bkgd.jpg);
-    background-repeat: repeat, no-repeat, repeat;
-    background-position: center, center 120px, center;
-    background-size: cover,210px 500px, cover;
-    height: 550px;
-    width: 100%;
-}
-
-.newcollection {
-    margin-top: 120px;
-    color: white;
-    text-shadow: 1px 1px black;
-}
-.summer {
-    color: white;
-    text-shadow: 1px 1px black;
-}
-
-.about {
-    padding: 65px 0 150px 0;
-    height: 120px;;
-}
-
-.about-header {
-    font-family: 'Playfair Display';
-    font-style: italic;
-    font-size: 2.4rem;
-    line-height: 6rem;
-}
-
-.style-font {
-    font-style: normal;
-    font-weight: bold;
-}
-
-.about p {
-    line-height: 2rem;
-}
-
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    height: 100vh;
-    padding-top: 95px;
-}
-
-.products a {
-    display: flex;
-    flex-wrap: wrap;
-    background-size: cover, cover;
-    text-shadow: 2px 2px rgb(117, 112, 112);
-}
-
-.products a:hover {
-    color: rgb(240, 209, 180);
-    text-shadow: 2px 2px rgb(117, 112, 112);
-}
-
-.category-name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-size: 30px;
-    color: white;
-    border: 4px solid white;
-}
-
-.mens {
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/mens-category.jpg);
-    flex-basis: 50%;
-    border-left: none;
-}
-.trends {
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/trends-category.jpg);
-    flex-basis: 25%;
-}
-.glasses {
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/glasses-category.jpg);
-    flex-basis: 25%;
-    border-right: none;
-}
-.sale {
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/sale-category.jpg);
-    flex-basis: 25%;
-    border-left: none;
-}
-.bags {
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/bags-category.jpg);
-    flex-basis: 25%;
-}
-.womens {
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/womens-category.jpg);
-    flex-basis: 50%;
-    border-right: none;
-}
-
-.featured {
-    padding-top: 95px;
-}
-.featured img {
+    /* Extra resets */
+    /* apply a natural box layout model to all elements, but allowing components to change */
+    .site-header {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        background-color: white;
+        width: 100%;
+        padding: 15px 0;
+        margin: 0 auto;
+    }
+    .header-container {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .logo {
+        flex-basis: 20%;
+        order: 1;
+    }
+    .aloha-logo {
+        width: 150px;
+    }
+    .site-nav {
+        flex-basis: 60%;
+        order: 2;
+    }
+    .site-nav ul {
+        text-align: center;
+        border: none;
+    }
+    .site-nav li {
+        margin-top: 5px;
+        align-self: center;
+        padding: 20px;
+    }
+    .site-nav a {
+        font-size: 1.1rem;
+        color: rgb(219, 99, 43);
+        text-decoration: none;
+    }
+    .site-nav a:hover {
+        color: rgba(63, 6, 6, 0.829);
+        text-decoration: none;
+    }
+    .shopping-cart {
+        flex-basis: 20%;
+        order: 3;
+    }
+    .shopping-cart-img {
+        width: 60px;
+    }
+    /* banner area */
+    .banner {
+        padding: 150px 0px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url(../project-01/images/banner-girl.png), url(../project-01/images/flower-bkgd.jpg);
+        background-repeat: repeat, no-repeat, repeat;
+        background-position: center, center 120px, center;
+        background-size: cover, 210px 500px, cover;
+        height: 550px;
+        width: 100%;
+    }
+    .newcollection {
+        margin-top: 120px;
+        color: white;
+        text-shadow: 1px 1px black;
+    }
+    .summer {
+        color: white;
+        text-shadow: 1px 1px black;
+    }
+    .about {
+        padding: 65px 0 150px 0;
+        height: 120px;
+        ;
+    }
+    .about-header {
+        font-family: 'Playfair Display';
+        font-style: italic;
+        font-size: 2.4rem;
+        line-height: 6rem;
+    }
+    .style-font {
+        font-style: normal;
+        font-weight: bold;
+    }
+    .about p {
+        line-height: 2rem;
+    }
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100vh;
+        padding-top: 95px;
+    }
+    .products a {
+        display: flex;
+        flex-wrap: wrap;
+        background-size: cover, cover;
+        text-shadow: 2px 2px rgb(117, 112, 112);
+    }
+    .products a:hover {
+        color: rgb(240, 209, 180);
+        text-shadow: 2px 2px rgb(117, 112, 112);
+    }
+    .category-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 30px;
+        color: white;
+        border: 4px solid white;
+    }
+    .mens {
+        flex-basis: 50%;
+        border-left: none;
+    }
+    .trends {
+        flex-basis: 25%;
+    }
+    .glasses {
+        flex-basis: 25%;
+        border-right: none;
+    }
+    .sale {
+        flex-basis: 25%;
+        border-left: none;
+    }
+    .bags {
+        flex-basis: 25%;
+    }
+    .womens {
+        flex-basis: 50%;
+        border-right: none;
+    }
+    /* .featured img {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.carousel-cell {
-    max-width: 25%;
-}
-
-.footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: rgb(51, 47, 47);
-}
-
-.address {
-    text-align: left;
-    font-size: 18px;
-    margin: 50px 50px;
-    color: white;
-}
-
-.street-address {
-    color: gray;
-}
-
-.address a {
-    text-decoration: underline;
-    color: white; 
-}
-.address a:hover {
-    color: rgb(196, 71, 49);
-}
-
-.so-me-names {
-    display: inline;
-    font-size: 1rem;
-}
-
-.social-media {
-    margin-right: 50px;
-    margin-top: 20px;
-}
-.social-media ul {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-.social-media li {
-    margin: 5px;
-}
-.social-media li i {
-    margin-right: 10px;
-}
-
-.social-media li a:hover {
-    text-decoration: none;
-    color: rgb(255, 181, 181);
-}
-
-/* Common Layout Classes */
-
-.container-small {
-    width: 740px;
-    margin: 0 auto;
-}
+} */
+    .carousel-cell {
+        max-width: 25%;
+    }
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgb(51, 47, 47);
+    }
+    .address {
+        text-align: left;
+        font-size: 18px;
+        margin: 50px 50px;
+        color: white;
+    }
+    .street-address {
+        color: gray;
+    }
+    .address a {
+        text-decoration: underline;
+        color: white;
+    }
+    .address a:hover {
+        color: rgb(196, 71, 49);
+    }
+    .so-me-names {
+        display: inline;
+        font-size: 1rem;
+    }
+    .social-media {
+        margin-right: 50px;
+        margin-top: 20px;
+    }
+    .social-media ul {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .social-media li {
+        margin: 5px;
+    }
+    .social-media li i {
+        margin-right: 10px;
+    }
+    .social-media li a:hover {
+        text-decoration: none;
+        color: rgb(255, 181, 181);
+    }
+    /* Common Layout Classes */
+    .container-small {
+        width: 740px;
+        margin: 0 auto;
+    }
 }
