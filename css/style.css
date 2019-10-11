@@ -6,22 +6,36 @@
 
 html {
     box-sizing: border-box;
-  }
-  *, *:before, *:after {
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
     box-sizing: inherit;
-  }
+}
 
 body {
     text-align: center;
     font-family: 'Raleway';
 }
 
+h2 {
+    font-family: 'Playfair Display';
+    font-size: 2.4em;
+    font-weight: 400;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
 .site-header {
-    /* position: fixed; */
-    /* display: flex; */
     background-color: white;
     max-width: 100%;
     padding: 10px 10px 0 10px;
+    z-index: 99;
 }
 
 .header-container {
@@ -120,14 +134,14 @@ body {
 .products {
     display: flex;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 120vh;
     padding-top: 95px;
 }
 
 .products a {
     display: flex;
     flex-wrap: wrap;
-    background-size: cover, cover;
+    background-size: cover;
     text-shadow: 2px 2px rgb(117, 112, 112);
 }
 
@@ -199,14 +213,22 @@ body {
     justify-content: center;
     align-items: center;
 }
+.carousel-cell {
+    max-width: 100%;
+    text-align: center;
+    padding: 3rem 2rem;
+
+}
+
+.main-carousel {
+    height: 48vh;
+    max-width: 100%;
+    padding-bottom: 4rem;
+}
 
 .updates {
     background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)),url(../project-01/images/wave-bkgd.jpg) no-repeat bottom;;
-    /* max-width: 100%; */
     text-align: center;
-    /* background-position: bottom; */
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
     height: 300px;
     color: white;
     text-shadow: .5px 2px grey;
@@ -329,7 +351,6 @@ body {
     display: none;
 }
 
-
 /* ------TABLET------ */
 
 @media screen and (min-width: 600px) {
@@ -395,8 +416,12 @@ body {
     .products {
         display: flex;
         flex-wrap: wrap;
-        height: 120vh;
+        height: 140vh;
         padding-top: 95px;
+    }
+
+    .carousel-cell {
+        width: 50%;
     }
 
     .footer {
@@ -543,7 +568,7 @@ body {
 .products {
     display: flex;
     flex-wrap: wrap;
-    height: 80vh;
+    height: 100vh;
     padding-top: 95px;
 }
 
@@ -607,17 +632,9 @@ body {
     align-items: center;
 }
 
-/* .updates {
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-/* .updates-header {
-    font-size: 30px;
-    padding: 1rem;
-} */
+.carousel-cell {
+    max-width: 25%;
+}
 
 .footer {
     display: flex;
