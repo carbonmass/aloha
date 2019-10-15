@@ -1,27 +1,42 @@
 /* ------MOBILE------ */
 
-/* Extra resets */
-/* apply a natural box layout model to all elements, but allowing components to change */
-
+/* GENERAL CSS */
 
 html {
     box-sizing: border-box;
-  }
-  *, *:before, *:after {
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
     box-sizing: inherit;
-  }
+}
 
 body {
     text-align: center;
     font-family: 'Raleway';
-    width: 100%;
 }
 
+h2 {
+    font-family: 'Playfair Display';
+    font-size: 2.4em;
+    font-weight: 400;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* HEADER */
+
 .site-header {
-    /* position: fixed; */
     background-color: white;
-    width: 100%;
+    max-width: 100%;
     padding: 10px 10px 0 10px;
+    z-index: 99;
 }
 
 .header-container {
@@ -50,13 +65,15 @@ body {
 }
 
 .site-nav li {
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
+
 .site-nav a {
-    font-size: .9em;
+    font-size: em;
     color: rgb(219, 99, 43);
     text-decoration: none;
 }
+
 .site-nav a:hover {
     color: rgba(63, 6, 6, 0.829);
     text-decoration: none;
@@ -67,13 +84,14 @@ body {
     width: 2.8rem;
 }
 
-/* banner area */
+/* BANNER */
+
 .banner {
     padding: 150px 0px;
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/banner-girl.png), url(../project-01/images/flower-bkgd.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url(../project-01/images/banner-girl.png), url(../project-01/images/flower-bkgd.jpg);
     background-repeat: repeat, no-repeat, repeat;
     background-position: center, center 150px, center;
-    background-size: cover,180px 440px, cover;
+    background-size: cover, 180px 440px, cover;
     height: 500px;
     width: 100%;
 }
@@ -84,6 +102,7 @@ body {
     color: white;
     text-shadow: 1px 1px black;
 }
+
 .summer {
     padding-top: 10px;
     font-family: 'Playfair Display';
@@ -91,6 +110,8 @@ body {
     color: white;
     text-shadow: 1px 1px black;
 }
+
+/* ABOUT */
 
 .about {
     padding: 65px 5px 140px 5px;
@@ -100,7 +121,7 @@ body {
 .about-header {
     font-family: 'Playfair Display';
     font-style: italic;
-    font-size: 2.4rem;
+    font-size: 2rem;
     line-height: 6rem;
 }
 
@@ -109,23 +130,30 @@ body {
     font-weight: bold;
 }
 
+.about {
+    text-align: center;
+}
+
 .about p {
     line-height: 2rem;
     font-weight: lighter;
 }
 
+/* PRODUCTS */
+
 .products {
     display: flex;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 160vh;
     padding-top: 95px;
 }
 
 .products a {
     display: flex;
     flex-wrap: wrap;
-    background-size: cover, cover;
     text-shadow: 2px 2px rgb(117, 112, 112);
+    max-width: 100%;
+    background-position: center;
 }
 
 .products a:hover {
@@ -144,87 +172,167 @@ body {
 }
 
 .mens {
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/mens-category.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url(../project-01/images/mens-category.jpg);
     flex-basis: 100%;
-    background-position: center;
-    background-size: contain;
+    background-size: contain, cover;
     border-left: none;
     border-right: none;
 }
+
 .trends {
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/trends-category.jpg);
-    background-position: center;
-    background-size: contain;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url(../project-01/images/trends-category.jpg);
+    background-size: contain, cover;
     border-left: none;
     flex-basis: 50%;
 }
+
 .glasses {
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/glasses-category.jpg);
-    background-position: center;
-    background-size: contain;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url(../project-01/images/glasses-category.jpg);
+    background-size: contain, cover;
     flex-basis: 50%;
     border-right: none;
 }
+
 .sale {
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/sale-category.jpg);
-    background-position: center;
-    background-size: contain;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url(../project-01/images/sale-category.jpg);
+    background-size: contain, cover;
     flex-basis: 50%;
     border-left: none;
 }
+
 .bags {
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/bags-category.jpg);
-    background-position: center;
-    background-size: contain;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url(../project-01/images/bags-category.jpg);
+    background-size: contain, cover;
     border-right: none;
     flex-basis: 50%;
 }
+
 .womens {
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/womens-category.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url(../project-01/images/womens-category.jpg);
     flex-basis: 100%;
-    background-position: center;
-    background-size: contain;
+    background-size: contain, cover;
     border-right: none;
     border-left: none;
 }
+
+/* FEATURED */
 
 .featured {
-    padding-top: 95px;
-}
-.featured img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 80px;
 }
 
+.main-carousel {
+    max-width: 100%;
+}
+
+.carousel-cell {
+    max-width: 100%;
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+h3 {
+    font-family: 'Playfair Display';
+    font-size: 1.5em;
+    color: rgb(223, 31, 31);
+    padding: .5em;
+}
+
+.carousel-cell p {
+    color: rgb(125, 128, 134)
+}
+
+/* UPDATES */
+
 .updates {
-    background: url(../project-01/images/wave-bkgd.jpg);
-    background-position: 0% 95%;
-    background-size:cover;
-    background-repeat: no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .15) 0, rgba(0, 0, 0, .15)), url(../project-01/images/wave-bkgd.jpg) no-repeat bottom;
+    ;
+    text-align: center;
     height: 300px;
     color: white;
-    text-shadow: .5px .5px grey;
+    text-shadow: .5px 2px grey;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 8px;
 }
 
 .updates-header {
     font-family: 'Playfair Display';
-    font-size: 30px;
-    padding: 1rem;
+    font-style: italic;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
+.updates span {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.updates ul {
+    max-width: 700px;
+}
+
+.updates-paragraph {
+    font-family: 'Raleway';
+    font-size: 1.2em;
+    font-weight: lighter;
+    line-height: 1.2em;
+}
+
+.subscribe-form {
+    position: relative;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.subscribe-form-input {
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    border: 1px solid rgb(148, 140, 140);
+    padding: 4px 10px;
+    font-size: 1rem;
+}
+
+.subscribe-form-input:focus {
+    outline: none;
+    border: 1px solid #800000;
+}
+
+.subscribe-form-submit {
+    background: rgb(196, 85, 85);
+    color: #fff;
+    height: 40px;
+    padding: 2px 10px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+.subscribe-form-submit:focus {
+    outline: none;
+    background: #800000;
+    color: #fff;
+}
+
+/* FOOTER */
 
 .footer {
     display: flex;
-    justify-content: space-between;
-    background-color: rgb(22, 19, 19);
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(51, 47, 47);
 }
 
 .address {
-    text-align: left;
+    text-align: center;
     font-size: 18px;
+    font-family: 'Playfair Display';
     margin: 50px 50px;
     color: white;
 }
@@ -235,27 +343,28 @@ body {
 
 .address a {
     text-decoration: underline;
-    color: white; 
+    color: white;
 }
+
 .address a:hover {
     color: rgb(196, 71, 49);
 }
 
-.social-media {
-    list-style: none;
-    text-align: left;
+.social-media ul {
+    display: flex;
+    justify-content: center;
 }
 
 .social-media li {
-    margin: 20px 70px;
+    margin: 10px 10px;
     padding: 5px;
-} 
+}
 
 .social-media a {
     text-decoration: none;
     font-size: 1.2rem;
     color: white;
-    justify-content: right;
+    justify-content: center;
 }
 
 .social-media li a:hover {
@@ -263,322 +372,244 @@ body {
     color: rgb(255, 181, 181);
 }
 
-
+.so-me-names {
+    display: none;
+}
 
 /* ------TABLET------ */
 
 @media screen and (min-width: 600px) {
 
+    /* HEADER */
 
     .site-header {
+        position: fixed;
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
         background-color: white;
         width: 100%;
         padding: 15px 0;
-        margin: 0 auto;
     }
-    
     .header-container {
-        justify-content: center;
-        align-items: center;
         width: 100%;
     }
-    
     .logo {
         flex-basis: 20%;
         order: 1;
     }
-    .aloha-logo {
-        width: 100px;
-    }
-    
     .site-nav {
         flex-basis: 60%;
-        order: 2;    
+        order: 2;
     }
-    
     .site-nav ul {
         text-align: center;
         border: none;
     }
     .site-nav li {
         margin-top: 5px;
-        align-self: center;
         padding: 10px;
     }
     .site-nav a {
-        font-size: .9rem;
-        color: rgb(219, 99, 43);
-        text-decoration: none;
+        font-size: 1em;
     }
-    .site-nav a:hover {
-        color: rgba(63, 6, 6, 0.829);
-        text-decoration: none;
-    }
-    
     .shopping-cart {
         flex-basis: 20%;
         order: 3;
     }
     .shopping-cart-img {
-        width: 45px;
+        width: 50px;
     }
-    
 
+    /* PRODUCTS */
+
+    .category-name {
+        border: 4px solid white;
+    }
+    .products {
+        height: 40em;
+        padding-top: 95px;
+    }
+
+    /* FEATURED */
+
+    .mens {
+        flex-basis: 50%;
+        border-left: none;
+        background-size: contain, cover;
+    }
+    .trends {
+        background-size: contain, cover;
+        flex-basis: 25%;
+    }
+    .glasses {
+        background-size: contain, cover;
+        flex-basis: 25%;
+        border-right: none;
+    }
+    .sale {
+        background-size: contain, cover;
+        flex-basis: 25%;
+        border-left: none;
+    }
+    .bags {
+        background-size: contain, cover;
+        flex-basis: 25%;
+    }
+    .womens {
+        flex-basis: 50%;
+        background-size: contain, cover;
+        border-right: none;
+    }
+    .carousel-cell {
+        width: 50%;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        flex-direction: wrap;
+        justify-content: space-between;
+    }
+    .address {
+        text-align: left;
+    }
+    .so-me-names {
+        display: inline;
+        font-size: 1rem;
+    }
+    .social-media {
+        margin-right: 40px;
+        margin-top: 20px;
+    }
+    .social-media ul {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .social-media li {
+        margin: 5px;
+    }
+    .social-media li i {
+        margin-right: 10px;
+    }
 }
-
 
 /* ------DESKTOP------ */
 
 @media screen and (min-width: 1240px) {
+    
+    /* HEADER */
+    
+    .header-container {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .aloha-logo {
+        width: 150px;
+    }
+    .site-nav ul {
+        text-align: center;
+        border: none;
+    }
+    .site-nav li {
+        padding: 2.5%;
+    }
+    .site-nav a {
+        font-size: 1.2rem;
+    }
+    .shopping-cart-img {
+        width: 65px;
+    }
+    
+    /* BANNER */
+    
+    .banner {
+        padding: 150px 0px;
+        background-position: center, center 120px, center;
+        background-size: cover, 210px 500px, cover;
+        height: 570px;
+    }
+    .newcollection {
+        margin-top: 120px;
+        font-size: 1.2em;
+    }
+    .summer {
+        font-size: 4em;
+    }
+    
+    /* ABOUT */
 
-/* Extra resets */
-/* apply a natural box layout model to all elements, but allowing components to change */
+    .about {
+        padding: 65px 0 150px 0;
+        height: 120px;
+    }
+    .about-header {
+        font-size: 2.4rem;
+        line-height: 6rem;
+    }
+    .about p {
+        line-height: 2rem;
+    }
 
-.site-header {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    background-color: white;
-    width: 100%;
-    padding: 15px 0;
-    margin: 0 auto;
-}
+    /* PRODUCTS */
 
-.header-container {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
+    .products {
+        height: 100vh;
+        padding-top: 95px;
+    }
+    .products a {
+        background-size: cover, cover;
+        text-shadow: 2px 2px rgb(117, 112, 112);
+    }
+    .products a:hover {
+        color: rgb(240, 209, 180);
+        text-shadow: 2px 2px rgb(117, 112, 112);
+    }
+    .category-name {
+        font-size: 1.5em;
+    }
 
-.logo {
-    flex-basis: 20%;
-    order: 1;
-}
-.aloha-logo {
-    width: 150px;
-}
+    /* FEATURED */
 
-.site-nav {
-    flex-basis: 60%;
-    order: 2;    
-}
+    .mens {
+        flex-basis: 50%;
+        border-left: none;
+    }
+    .trends {
+        flex-basis: 25%;
+    }
+    .glasses {
+        flex-basis: 25%;
+        border-right: none;
+    }
+    .sale {
+        flex-basis: 25%;
+        border-left: none;
+    }
+    .bags {
+        flex-basis: 25%;
+    }
+    .womens {
+        flex-basis: 50%;
+        border-right: none;
+    }
+    .carousel-cell {
+        max-width: 25%;
+    }
 
-.site-nav ul {
-    text-align: center;
-    border: none;
-}
-.site-nav li {
-    margin-top: 5px;
-    align-self: center;
-    padding: 20px;
-}
-.site-nav a {
-    font-size: 1.1rem;
-    color: rgb(219, 99, 43);
-    text-decoration: none;
-}
-.site-nav a:hover {
-    color: rgba(63, 6, 6, 0.829);
-    text-decoration: none;
-}
+    /* FOOTER */
 
-.shopping-cart {
-    flex-basis: 20%;
-    order: 3;
-}
-.shopping-cart-img {
-    width: 60px;
-}
-
-/* banner area */
-.banner {
-    padding: 150px 0px;
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/banner-girl.png), url(../project-01/images/flower-bkgd.jpg);
-    background-repeat: repeat, no-repeat, repeat;
-    background-position: center, center 120px, center;
-    background-size: cover,210px 500px, cover;
-    height: 550px;
-    width: 100%;
-}
-
-.newcollection {
-    margin-top: 120px;
-    font-size: 20px;
-    color: white;
-    text-shadow: 1px 1px black;
-}
-.summer {
-    font-size: 70px;
-    color: white;
-    text-shadow: 1px 1px black;
-}
-
-.about {
-    padding: 65px 0 150px 0;
-    height: 120px;;
-}
-
-.about-header {
-    font-family: 'Playfair Display';
-    font-style: italic;
-    font-size: 2.4rem;
-    line-height: 6rem;
-}
-
-.style-font {
-    font-style: normal;
-    font-weight: bold;
-}
-
-.about p {
-    line-height: 2rem;
-}
-
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    height: 80vh;
-    padding-top: 95px;
-}
-
-.products a {
-    display: flex;
-    flex-wrap: wrap;
-    background-size: cover, cover;
-    text-shadow: 2px 2px rgb(117, 112, 112);
-}
-
-.products a:hover {
-    color: rgb(240, 209, 180);
-    text-shadow: 2px 2px rgb(117, 112, 112);
-}
-
-.category-name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-size: 30px;
-    color: white;
-    border: 4px solid white;
-}
-
-.mens {
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/mens-category.jpg);
-    flex-basis: 50%;
-    border-left: none;
-}
-.trends {
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/trends-category.jpg);
-    flex-basis: 25%;
-}
-.glasses {
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/glasses-category.jpg);
-    flex-basis: 25%;
-    border-right: none;
-}
-.sale {
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/sale-category.jpg);
-    flex-basis: 25%;
-    border-left: none;
-}
-.bags {
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/bags-category.jpg);
-    flex-basis: 25%;
-}
-.womens {
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../project-01/images/womens-category.jpg);
-    flex-basis: 50%;
-    border-right: none;
-}
-
-.featured {
-    padding-top: 95px;
-}
-.featured img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.updates {
-    background: url(../project-01/images/wave-bkgd.jpg);
-    background-position: 0% 95%;
-    background-size:cover;
-    background-repeat: no-repeat;
-    height: 300px;
-    color: white;
-    text-shadow: .5px .5px grey;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.updates-header {
-    font-family: 'Playfair Display';
-    font-size: 30px;
-    padding: 1rem;
-}
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(22, 19, 19);
-}
-
-.address {
-    text-align: left;
-    font-size: 18px;
-    margin: 50px 50px;
-    color: white;
-}
-
-.street-address {
-    color: gray;
-}
-
-.address a {
-    text-decoration: underline;
-    color: white; 
-}
-.address a:hover {
-    color: rgb(196, 71, 49);
-}
-
-.social-media {
-    list-style: none;
-    text-align: left;
-}
-
-.social-media li {
-    margin: 20px 70px;
-    padding: 5px;
-} 
-
-.social-media a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: white;
-    justify-content: right;
-}
-
-.social-media li i {
-    text-align: left;
-    margin-right: 10px;
-}
-
-.social-media li a:hover {
-    text-decoration: none;
-    color: rgb(255, 181, 181);
-}
-
-/* Common Layout Classes */
-
-.container-small {
-    width: 740px;
-    margin: 0 auto;
-}
+    .address {
+        margin: 50px 200px;
+    }
+    .social-media li {
+        margin: 5px 200px;
+    }
+    .social-media li i {
+        margin-right: 10px;
+    }
 }
